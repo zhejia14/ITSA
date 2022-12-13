@@ -1,44 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
-double SQRT(double num){
-    double start=0,end=num;
-    double mid, answer=0;
-    while (start<=end) {
-        mid=(start+end)/2;
-        
-        if(mid*mid==num){
-            answer=mid;
-            break;
-        }
-        if(mid*mid<num){
-            answer=start;
-            start=mid+1;
-        }
-        else end=mid-1;
-    }
-    
-    double increment=0.1;
-    for(int i=0;i<8;i++){
-        while (answer*answer<=num) {
-            answer+=increment;
-        }
-        answer=answer-increment;
-        increment=increment/10;
-    }
-    return  answer;
-}
-double dis(double x, double y){
+#include <math.h>
+double dis(double x, double y){//計算input座標到原點的直線距離
     x=x*x;
     y=y*y;
     double dis=x+y;
-    dis=SQRT(dis);
+    dis=sqrt(dis);
     return dis;
 }
 int main(){
     double range=100;
     double x,y;
     while(scanf("%lf %lf", &x, &y)!=EOF){
-        if(dis(x,y)>range)printf("outside\n");
-        else printf("inside\n");
+        if(dis(x,y)>range)printf("outside\n");//當距離大於半徑表示在圓外
+        else printf("inside\n");//否則在圓內
     }
 }
