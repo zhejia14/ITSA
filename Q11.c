@@ -8,7 +8,7 @@ int main() {
                 scanf("%d", &array[i][j]);
             }
         }
-        for(int i=0;i<col;i++){//轉制矩陣並印出結果
+        for(int i=0;i<col;i++){//反轉矩陣並印出結果
             for(int j=0;j<row;j++){
                if(j!=row-1) printf("%d ", array[j][i]);
                else printf("%d", array[j][i]);
