@@ -17,3 +17,5 @@ int main(){
     printf("%d\n", max);
     return 0;
 }
+
+//最少派車數
