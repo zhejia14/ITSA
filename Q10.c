@@ -12,3 +12,4 @@ int main()
     printf("%d\n", answer);
     return 0;
 }
+//輾轉相除法求最大公因數
