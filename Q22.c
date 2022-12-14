@@ -15,3 +15,6 @@ int main(){
     printf("False\n");
     return 0;
 }
+
+
+//判斷圈圈叉叉的輸贏
