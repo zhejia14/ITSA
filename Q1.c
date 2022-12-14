@@ -1,3 +1,4 @@
+//LED數字顯示
 #include <stdio.h>
 #include <string.h>
 char out[5][23];
