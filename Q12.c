@@ -9,3 +9,5 @@ int main(){
     in=fun(in);
     printf("%d\n", in);
 }
+
+//根據公式寫出遞迴程式
