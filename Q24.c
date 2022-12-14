@@ -10,3 +10,5 @@ int main(){
     printf("%lld\n", (long long int)sum);
     return  0;
 }
+
+//計算複利
