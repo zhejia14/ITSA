@@ -15,3 +15,5 @@ int main(){
     }
     return 0;
 }
+
+//字串的ASCII碼總和
