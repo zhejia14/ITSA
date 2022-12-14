@@ -23,3 +23,5 @@ int main() {
     INSERTION(array, 10);
     return 0;
 }
+
+//找出最大值與最小值
